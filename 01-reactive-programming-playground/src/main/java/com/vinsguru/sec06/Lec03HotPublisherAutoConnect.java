@@ -8,7 +8,7 @@ import reactor.core.publisher.Flux;
 import java.time.Duration;
 
 /*
-    almost same as publish().refCount(1).
+    autoConnect almost same as publish().refCount(1).
     - does NOT stop when subscribers cancel. So it will start producing even for 0 subscribers once it started.
     - make it real hot - publish().autoConnect(0)
  */
